@@ -1,3 +1,9 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(18, 18, 18);
+    --highlight-color: rgb(245, 121, 93);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +13,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--primary-color);
 }
 
 header {
-    background-color: rgb(24, 24, 24);
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+nav ul {
+    margin: 20px;
 }
 
 nav ul, .portfolio-item ul {
     list-style-type: none;
     text-align: center;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
 }
 
 nav ul li, .portfolio-item li {
@@ -26,7 +39,7 @@ nav ul li, .portfolio-item li {
 }
 
 nav ul li a, .portfolio-item a {
-    color: #fff;
+    color: rgb(201, 200, 206);
     text-decoration: none;
 }
 
@@ -39,7 +52,7 @@ nav ul li a, .portfolio-item a {
     padding: 100px 0;
     background-image: url('hero-image.jpg');
     background-size: cover;
-    color: #fff;
+    color: rgb(201, 200, 206);
 }
 
 .showcase-content h1 {
@@ -55,7 +68,7 @@ nav ul li a, .portfolio-item a {
 .portfolio {
     padding: 50px 0;
     text-align: center;
-    color: #fff;
+    color: rgb(201, 200, 206);
 }
 
 .portfolio-grid {
@@ -80,14 +93,14 @@ nav ul li a, .portfolio-item a {
 
 .tools {
     border-style: solid;
-    border-color: #a9a9a9;
+    border-color: var(--highlight-color);
     border-radius: 0.5rem;
     border-width: thin;
     padding: 3px 6px;
 }
 
 footer {
-    background-color: rgb(24, 24, 24);
+    background-color: var(--primary-color);
     color: #fff;
     padding: 20px 0;
     text-align: center;
