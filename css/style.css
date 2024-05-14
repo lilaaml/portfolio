@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(31, 31, 31);
+}
+
+header {
+    background-color: rgb(24, 24, 24);
+    padding: 10px 0;
+}
+
+nav ul, .portfolio-item ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li, .portfolio-item li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a, .portfolio-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    opacity: 0.7;
+}
+
+.showcase {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.showcase-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.showcase-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.portfolio {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 300px;
+    margin: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+}
+
+.tools {
+    border-style: solid;
+    border-color: #a9a9a9;
+    border-radius: 0.5rem;
+    border-width: thin;
+    padding: 3px 6px;
+}
+
+footer {
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
