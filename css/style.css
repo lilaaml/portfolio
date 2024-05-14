@@ -20,6 +20,19 @@ header {
     padding: 20px 0;
 }
 
+nav {
+    background-color: var(--primary-color) !important;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+}
+
 nav ul {
     margin: 20px;
 }
@@ -50,9 +63,28 @@ nav ul li a, .portfolio-item a {
 .showcase {
     text-align: center;
     padding: 100px 0;
-    background-image: url('hero-image.jpg');
-    background-size: cover;
     color: rgb(201, 200, 206);
+    background-color: rgba(245, 121, 93, 0.1);
+    height: 36vh;
+}
+
+.showcase:before {
+    content: '';
+    background: url('../images/showcase.jpg');
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    z-index: -1;
+}
+
+.picture-credit {
+    text-align: right;
+    padding-right: 20px;
+    font-style: italic;
 }
 
 .showcase-content h1 {
@@ -66,7 +98,7 @@ nav ul li a, .portfolio-item a {
 }
 
 .portfolio {
-    padding: 50px 0;
+    padding: 20px 0 70px 0;
     text-align: center;
     color: rgb(201, 200, 206);
 }
@@ -80,15 +112,27 @@ nav ul li a, .portfolio-item a {
 .portfolio-item {
     width: 300px;
     margin: 20px;
+    border-bottom: 2px solid #fff;
 }
 
 .portfolio-item img {
     width: 100%;
-    border-radius: 5px;
 }
 
 .portfolio-item h3 {
     margin-top: 10px;
+}
+
+.featured-proj {
+    text-align: left;
+}
+
+.dash {
+    color: var(--highlight-color);
+}
+
+.brief-exp {
+    padding: 0 10px;
 }
 
 .tools {
@@ -97,6 +141,10 @@ nav ul li a, .portfolio-item a {
     border-radius: 0.5rem;
     border-width: thin;
     padding: 3px 6px;
+}
+
+.sheet {
+    background: var(--secondary-color);
 }
 
 footer {
