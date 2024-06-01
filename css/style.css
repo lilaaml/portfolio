@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(0, 0, 0);
-    --secondary-color: rgb(18, 18, 18);
-    --highlight-color: rgb(245, 121, 93);
+    --secondary-color: #121212;
+    --highlight-color: #f5795d;
 }
 
 * {
@@ -121,6 +121,10 @@ nav ul li a, .portfolio-item a {
 
 .portfolio-item h3 {
     margin-top: 10px;
+}
+
+.portfolio-item a {
+    cursor: pointer;
 }
 
 .featured-proj {
